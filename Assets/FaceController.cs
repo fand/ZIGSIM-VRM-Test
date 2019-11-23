@@ -86,6 +86,10 @@ public class FaceController : MonoBehaviour
         {
             _sad = Mathf.Lerp(_sad, args[0], 0.2f);
         }
+        else if (adr == "facemouthfunnel")
+        {
+            Face("mouth_o", args[0] * 2 - 1);
+        }
         else if (adr == "facebrowinnerup")
         {
             _surprise = Mathf.Lerp(_surprise, args[0], 0.2f);
